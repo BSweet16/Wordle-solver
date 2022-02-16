@@ -11,6 +11,8 @@
     <OutputPath>.</OutputPath>
     <Name>Wordle solver</Name>
     <RootNamespace>Wordle solver</RootNamespace>
+    <InterpreterId>
+    </InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,12 +24,21 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Class\AttemptResult.py" />
+    <Compile Include="Class\solver.py" />
     <Compile Include="Class\word.py" />
     <Compile Include="Class\puzzle.py" />
     <Compile Include="Wordle_solver.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Class\" />
+    <Folder Include="Class\corpora\" />
+    <Folder Include="Class\corpora\words\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Class\corpora\words.zip" />
+    <Content Include="Class\corpora\words\en" />
+    <Content Include="Class\corpora\words\en-basic" />
+    <Content Include="Class\corpora\words\README" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
