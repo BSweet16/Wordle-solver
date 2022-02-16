@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Wordle solver", "Wordle solver.pyproj", "{398DED3B-9AF9-4BB7-B413-8C55F94CB0D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{398DED3B-9AF9-4BB7-B413-8C55F94CB0D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{398DED3B-9AF9-4BB7-B413-8C55F94CB0D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {37FEFF0B-607F-403B-8C91-C77C9E8273D5}
+	EndGlobalSection
+EndGlobal
