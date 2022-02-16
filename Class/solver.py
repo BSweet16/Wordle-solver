@@ -19,5 +19,5 @@ class PuzzleSolver(object):
         foundWords = []
         for word in english_words_set:
             if len(word) == MyWord.MAX_WORD_LENGTH: # Build a list of words that can apply to the max word length
-                foundWords.append(word)
+                foundWords.append(word.upper())
         return foundWords
