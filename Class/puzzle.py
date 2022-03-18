@@ -56,11 +56,15 @@ class MyPuzzle(object):
         print(f"{AttemptResult.EXACT.value} (Green): Letter was correct")
         print(f"{AttemptResult.WRONG_POSITION.value} (Yellow): Letter is in another position of the word")
         print(f"{AttemptResult.WRONG.value} (Red/Grey): Letter does not exist in the word")
+        print(f"\"{AttemptResult.SKIP.value}\" or \"{AttemptResult.SKIP_WORD.value}\": Skip this word")
 
         # Enter number result of each value
         attempt_results = []
         for character in guess:
-            attempt_results.append(input(f"\t{character}: "))
+            result = input(f"\t{character}: ")
+            attempt_results.append(result)
+            if result.upper() == AttemptResult.SKIP or result.upper() == AttemptResult.SKIP_WORD:
+                break
 
         # Complete a usage
         self.usedAttempts += 1
